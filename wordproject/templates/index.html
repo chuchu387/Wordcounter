@@ -1,6 +1,7 @@
 <h1> Welcome to Word Counter</h1>
 <h2> Input your Text below: </h2>
-<form action="counter" method="get">
+<form action="counter" method="POST">
+    {% csrf_token %}
     <textarea name = "text" rows="25" cols="100"></textarea><br><br>
     <input type="submit">
 </form>
